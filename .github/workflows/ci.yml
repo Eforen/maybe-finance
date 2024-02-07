@@ -99,3 +99,25 @@ jobs:
           name: screenshots
           path: ${{ github.workspace }}/tmp/screenshots
           if-no-files-found: ignore
+  build:
+    if: "!contains(github.event.head_commit.message, 'skip build')"
+    needs: [scan_ruby, scan_js, lint, test]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v1
+    
+    - name: Docker Login
+      env:
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASS
+    
+    - name: "Build docker image"
+      run: |
+        docker build . -t eforen/maybe-finance:latest
+    
+    - name: "Push docker image to DockerHub"
+      run: |
+        docker push eforen/maybe-finance:latest
