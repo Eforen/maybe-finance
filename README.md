@@ -56,6 +56,27 @@ For further instructions, see guides below.
 
 This is 100% optional and meant for devs who don't want to worry about installing requirements manually for their platform. You can follow [this guide](https://code.visualstudio.com/docs/devcontainers/containers) to learn more about Dev Containers.
 
+### Env Vars
+
+| ENV Name | Default |
+| --: | :-- |
+| ASSUME_SSL | ? |
+| FORCE_SSL | ? |
+| RAILS_ENV | ? |
+| SECRET_KEY_BASE | ? |
+| SSL_ENABLE | ? |
+| RAILS_MAX_THREADS | ? |
+| HOSTED | ? |
+| APP_DOMAIN | ? |
+| SMTP_ADDRESS | ? |
+| SMTP_PORT | ? |
+| SMTP_USERNAME | ? |
+| SMTP_PASSWORD | ? |
+| TLS | ? |
+| DB_HOST | ? |
+| POSTGRES_PASSWORD | ? |
+| POSTGRES_USER | ? |
+
 #### Mac
 
 Please visit our [Mac dev setup guide](https://github.com/maybe-finance/maybe/wiki/Mac-Dev-Setup-Guide).
