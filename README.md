@@ -86,6 +86,28 @@ We will update this section as we get closer to an initial release.
 
 Please see our [guide on self hosting here](https://github.com/maybe-finance/maybe/wiki/Self-Hosting-Setup-Guide).
 
+### Env Vars
+
+| ENV Name | Default |
+| --: | :-- |
+| ASSUME_SSL | ? |
+| FORCE_SSL | ? |
+| RAILS_ENV | ? |
+| SECRET_KEY_BASE | ? |
+| SSL_ENABLE | ? |
+| RAILS_MAX_THREADS | ? |
+| HOSTED | ? |
+| APP_DOMAIN | ? |
+| SMTP_ADDRESS | ? |
+| SMTP_PORT | ? |
+| SMTP_USERNAME | ? |
+| SMTP_PASSWORD | ? |
+| TLS | ? |
+| DB_HOST | ? |
+| POSTGRES_PASSWORD | ? |
+| POSTGRES_USER | ? |
+
+
 ## Repo Activity
 
 ![Repo Activity](https://repobeats.axiom.co/api/embed/7866c9790deba0baf63ca1688b209130b306ea4e.svg "Repobeats analytics image")
